@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>電卓</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div id="output" class="display"></div>
+        <div class="btn_box">
+            <button onclick="reset()" class="ac_btn">AC</button>
+            <button onclick="set(this)">/</button>
+            <button onclick="set(this)">9</button>
+            <button onclick="set(this)">8</button>
+            <button onclick="set(this)">7</button>
+            <button onclick="set(this)">*</button>
+            <button onclick="set(this)">6</button>
+            <button onclick="set(this)">5</button>
+            <button onclick="set(this)">4</button>
+            <button onclick="set(this)">-</button>
+            <button onclick="set(this)">3</button>
+            <button onclick="set(this)">2</button>
+            <button onclick="set(this)">1</button>
+            <button onclick="set(this)" class="plus_btn">+</button>
+            <button onclick="set(this)">.</button>
+            <button onclick="set(this)">0</button>
+            <button onclick="calc(this)">=</button>
+        </div>
+        <!-- ↓onclick作動しない件、z-index:-1となっていたためでした…。 -->
+        <!-- ↓onclick属性が全く作動しない、、、。addEve -->
+        <!-- <script>
+            function alert(){
+                alert("こんにちわ！");
+                console.log("こんにちわ！");
+            }
+        </script>
+        <button onclick="alert()">こんにちわボタン</button> -->
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
